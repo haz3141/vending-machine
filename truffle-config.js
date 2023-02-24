@@ -15,14 +15,13 @@ module.exports = {
      port: 8545,
      network_id: "*"
     },
-    goerli: {
+    sepolia: {
       provider: () => new HDWalletProvider({
         privateKeys: private_keys,
-        providerOrUrl: 'https://goerli.infura.io/v3/26bfc100336e49fc8466a630f9a06b02'
+        providerOrUrl: 'https://sepolia.infura.io/v3/26bfc100336e49fc8466a630f9a06b02'
       }),
-      network_id: 5,
+      network_id: 11155111,
       gas: 4465030,
-      gasPrice: 38899666777,
       confirmations: 2, // # of confirmations to wait between deployments. (default: 0)
       timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true, // Skip dry run before migrations? (default: false for public nets )
